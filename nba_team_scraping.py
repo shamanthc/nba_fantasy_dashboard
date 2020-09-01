@@ -11,7 +11,7 @@ YEAR = 2019
 num_of_cols = 24
 num_of_rows = 9
 total_elements = num_of_cols * num_of_rows
-file_location = "H:\Backup\Documents\Shamanth's Folder\Fantasy Dashboard\Team Data\\"
+file_location = ""
 
 # list of team abbreviations
 teams = ['ATL', 'BOS', 'NJN', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOH', 'NYK', 'OKC', 'ORL',

@@ -16,7 +16,7 @@ YEAR = 2019
 playersMap = {}
 main_url = 'https://www.basketball-reference.com'
 url = "https://www.basketball-reference.com/leagues/NBA_" + str(YEAR) + "_per_game.html"
-file_location = "H:\Backup\Documents\Shamanth's Folder\Fantasy Dashboard\NBA Players\\" 
+file_location = "" 
 
 # a map to replace special characters because there will be some read issues since R and the filesystem interpret special characters differently
 special_char_map = {'À':'A', 'Á':'A', 'Â':'A', 'Ã':'A', 'Ä':'A', 'Å':'A', 'Æ':'A', 'Ç':'C', 'È':'E', 'É':'E','Ê':'E', 'Ë':'E', 'Ì':'I', 'Í':'I', 'Î':'I', 'Ï':'I', 'İ':'I', 'Ñ':'N', 'Ò':'O', 

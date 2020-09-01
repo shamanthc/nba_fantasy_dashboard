@@ -1,8 +1,7 @@
 # This R script contains functions that are used in the dashboard
 
-filelocation <- "H:/Backup/Documents/Shamanth's Folder/Fantasy Dashboard/NBA Players/"
-filelocation2 <- "H:/Backup/Documents/Shamanth's Folder/Fantasy Dashboard/Team Data/"
-file_model <- "H:/Backup/Documents/Shamanth's Folder/Fantasy Dashboard/playerdataclean.csv"
+filelocation <- "path/to/folder/containing/csv/files/created/by/nba_player_scraping.py"
+filelocation2 <- "path/to/folder/containing/csv/files/created/by/nba_team_scraping.py"
 library(dplyr)
 library(rvest)
 

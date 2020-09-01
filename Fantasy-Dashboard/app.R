@@ -7,12 +7,12 @@
 #    http://shiny.rstudio.com/
 #
 
-# shiny::runApp("H:/Backup/Documents/Shamanth's Folder/Fantasy Dashboard/Fantasy-Dashboard")
+# shiny::runApp("[path/to/folder/]")
 
 library(shiny)
 library(dplyr)
-source("H:/Backup/Documents/Shamanth's Folder/Fantasy Dashboard/NBA-regression-script.R")
-player_choices = readLines("H:/Backup/Documents/Shamanth's Folder/Fantasy Dashboard/playerlist.txt", encoding = 'UTF-8')
+source("path/to/NBA-regression-script.R")
+player_choices = readLines("path/to/playerlist.txt", encoding = 'UTF-8')
 options(width = 210)
 
 ui <- fluidPage(
