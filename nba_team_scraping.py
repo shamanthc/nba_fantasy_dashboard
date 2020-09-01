@@ -11,6 +11,7 @@ YEAR = 2019
 num_of_cols = 24
 num_of_rows = 9
 total_elements = num_of_cols * num_of_rows
+file_location = "H:\Backup\Documents\Shamanth's Folder\Fantasy Dashboard\Team Data\\"
 
 # list of team abbreviations
 teams = ['ATL', 'BOS', 'NJN', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOH', 'NYK', 'OKC', 'ORL',
@@ -51,5 +52,5 @@ for t in teams:
     
     # create a csv file for the team and write the data frame to the csv file
     filename = t + ".csv"
-    final_df.to_csv(r"H:\Backup\Documents\Shamanth's Folder\Fantasy Dashboard\Team Data\\" + filename , index=False, sep=',', encoding='utf-8')
+    final_df.to_csv(file_location + filename , index=False, sep=',', encoding='utf-8')
     print("Finished creating file for " + t)

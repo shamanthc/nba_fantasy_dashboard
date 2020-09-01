@@ -8,6 +8,7 @@ from selenium import webdriver
 # some defaults to scrape data from Basketball reference. Scrapes data from the YEAR-1 - YEAR season e.g. to scrape data from the 2018 - 2019 season, set YEAR to 2019 
 YEAR = 2019
 playersMap = {}
+file_location = "H:\Backup\Documents\Shamanth's Folder\Fantasy Dashboard\playerdata.csv"
 i = 1
 
 # a map to replace special characters because there will be some read issues since R and the filesystem interpret special characters differently
@@ -70,7 +71,7 @@ for p in players:
     print(stats[0] + " added")
     
 # write the final dataframe to a csv file
-final_df.to_csv(r"H:\Backup\Documents\Shamanth's Folder\Fantasy Dashboard\playerdata.csv", index=False, sep=',', encoding='utf-8')   
+final_df.to_csv(file_location, index=False, sep=',', encoding='utf-8')   
 print("data frame done")
 
 # create a txt file with a list of players

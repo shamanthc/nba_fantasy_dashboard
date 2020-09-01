@@ -16,6 +16,7 @@ YEAR = 2019
 playersMap = {}
 main_url = 'https://www.basketball-reference.com'
 url = "https://www.basketball-reference.com/leagues/NBA_" + str(YEAR) + "_per_game.html"
+file_location = "H:\Backup\Documents\Shamanth's Folder\Fantasy Dashboard\NBA Players\\" 
 
 # a map to replace special characters because there will be some read issues since R and the filesystem interpret special characters differently
 special_char_map = {'À':'A', 'Á':'A', 'Â':'A', 'Ã':'A', 'Ä':'A', 'Å':'A', 'Æ':'A', 'Ç':'C', 'È':'E', 'É':'E','Ê':'E', 'Ë':'E', 'Ì':'I', 'Í':'I', 'Î':'I', 'Ï':'I', 'İ':'I', 'Ñ':'N', 'Ò':'O', 
@@ -96,5 +97,5 @@ for p in playersMap:
     
     # create a csv file and write the dataframe to the csv file
     filename = p.replace(" ", "") + ".csv"
-    final_df.to_csv(r"H:\Backup\Documents\Shamanth's Folder\Fantasy Dashboard\NBA Players\\" + filename , index=False, sep=',', encoding='utf-8')
+    final_df.to_csv(file_location + filename , index=False, sep=',', encoding='utf-8')
     print("Finished creating file for " + p)
