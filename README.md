@@ -16,14 +16,11 @@ Next you will need to run the following Python scripts that will generate .csv a
 - nba_player_scraping.py: extracts a player's gamelog i.e. the player's stats for each game (approx 500 csv files, dependant on how many players played that season)
 - nba_team_scraping.py:   extracts a team's season averages (30 csv files b/c there are 30 teams)
 
-For each script, you will need to edit two global variables: YEAR and file_location
+For each script, you will need to edit the following global variable: YEAR
 YEAR is the season you would like to extract data from. If you would like to extract data from the
 2018-2019 season, you will set YEAR to 2019. If you would like to extract data from the 2019-2020 season
-you will set YEAR to 2020. file_location is simply the file path of where you would like the files to be stored. 
-The csv file names will be determined by the scripts so you do not need to specify those. Simply specify the file path of the folder you would like the csv files to
-be stored in.
-For the script nba_player_scraping
-NOTE: I will be working to improve the scripts so users won't need to edit file paths
+you will set YEAR to 2020. 
+NOTE: I will be working to improve the scripts to abstract their details so users won't have to edit any variables inside them. 
 NOTE: nba_player_scraping will take some time to complete since there are approx. 500 players in the league. I am looking into how to improve the speed for this.  
 
 If you would like to update the data, simply re-run these scripts. Keep in mind that by updating, you may overwrite these files.

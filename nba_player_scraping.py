@@ -3,6 +3,8 @@ import pandas as pd
 import re
 import requests
 from bs4 import BeautifulSoup
+import os
+import shutil
 
 #selenium imports 
 from selenium import webdriver
@@ -16,7 +18,10 @@ YEAR = 2019
 playersMap = {}
 main_url = 'https://www.basketball-reference.com'
 url = "https://www.basketball-reference.com/leagues/NBA_" + str(YEAR) + "_per_game.html"
-file_location = "" 
+file_location = os.getcwd() + "\\Player Data\\"
+if os.path.exists(file_location):
+    shutil.rmtree(file_location)
+os.mkdir(file_location)
 
 # a map to replace special characters because there will be some read issues since R and the filesystem interpret special characters differently
 special_char_map = {'À':'A', 'Á':'A', 'Â':'A', 'Ã':'A', 'Ä':'A', 'Å':'A', 'Æ':'A', 'Ç':'C', 'È':'E', 'É':'E','Ê':'E', 'Ë':'E', 'Ì':'I', 'Í':'I', 'Î':'I', 'Ï':'I', 'İ':'I', 'Ñ':'N', 'Ò':'O', 
